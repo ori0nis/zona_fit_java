@@ -43,13 +43,13 @@ public class AppZonaFit {
         return Integer.parseInt(consola.nextLine());
     }
 
-    private static boolean ejecutarMenu(int opcion, Scanner consola, IClienteDAO cliente) {
+    private static boolean ejecutarMenu(int opcion, Scanner consola, IClienteDAO clienteDAO) {
         var salir = false;
         switch (opcion) {
-            case 1 -> mostrarClientes(cliente);
-            case 2 -> agregarCliente(consola, cliente);
-            case 3 -> modificarCliente(consola, cliente);
-            case 4 -> eliminarCliente(consola, cliente);
+            case 1 -> mostrarClientes(clienteDAO);
+            case 2 -> agregarCliente(consola, clienteDAO);
+            case 3 -> modificarCliente(consola, clienteDAO);
+            case 4 -> eliminarCliente(consola, clienteDAO);
             case 5 -> {
                 System.out.println("Nos vemos!");
                 salir = true;
