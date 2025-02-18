@@ -1,3 +1,3 @@
 ## Welcome to my first attempt at Java + SQL programming! 🚀
 
-This project was completed following Ubaldo Acosta's lead during his "Universidad Java" masterclass.
+Zona Fit Java is a simple app that uses a DAO design pattern to search for, add, modify and delete clients from an SQL database.
